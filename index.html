@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/ts/CustomTodo.ts"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">TODO</div>
+        <i class="fa fa-bars"></i>
+    </header>
+
+    <div class="todos">
+        <div class="header">
+            <div class="form-group">
+                <input type="text" placeholder="rechercher une tache">
+            </div>
+            <span>
+                <input id="check" type="checkbox">
+                <label for="check">Terminer ?</label>
+            </span>
+        </div>
+        <div class="todos-list">
+        </div>
+    </div>
+
+    <button id="btnAdd" class="btn btn-add" type="button">+</button>
+
+    <div class="modal" id="modal">
+        <div class="card">
+            <div class="cross">x</div>
+            <div class="form-group">
+                <input type="text" id="libelle" placeholder="ajouter une todos">
+            </div>
+            <span>
+                <input id="check-form" type="checkbox">
+                <label for="check-form">Terminer ?</label>
+            </span>
+            <button class="btn btn-submit" id="submit" type="button">AJOUTER</button>
+        </div>
+    </div>
+
+    <script>var exports = {"__esModule": true};</script>
+    <script type="module" src="./src/ts/app.js" ></script>
+</body>
+</html>
